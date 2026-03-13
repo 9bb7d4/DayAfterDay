@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7353215648283221901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7872307545202984247}
+  - component: {fileID: 6552690821131176594}
+  - component: {fileID: 9010333809491344984}
+  - component: {fileID: 7695164663848166111}
+  m_Layer: 0
+  m_Name: P_ThirdWepon_Kar98
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7872307545202984247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353215648283221901}
+  m_LocalRotation: {x: -0.09562013, y: -0.10341283, z: 0.0013337369, w: -0.9900307}
+  m_LocalPosition: {x: 0.79, y: -0.75, z: 1}
+  m_LocalScale: {x: 0.0022079994, y: 0.001127411, z: 0.00065429945}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 2.793, y: -191.401, z: 178.418}
+--- !u!33 &6552690821131176594
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353215648283221901}
+  m_Mesh: {fileID: 8214138612808221108, guid: bbc85ee6b313c1e4082b23d4cc3ca66a, type: 3}
+--- !u!23 &9010333809491344984
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353215648283221901}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -6478536213147159724, guid: bbc85ee6b313c1e4082b23d4cc3ca66a, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7695164663848166111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353215648283221901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90af4e9bd78359547b910d8b1dd68c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 2842731898074059864, guid: 57f996065c6228646b0826ae68a02a11, type: 3}
+  bulletSpawn: {fileID: 0}
+  bulletSpeed: 50
+  maxAmmo: 5
+  currentAmmo: 0
+  maxTotalAmmo: 50
+  currentTotalAmmo: 0
+  reloadTime: 3
+  fireRate: 1
+  ammoText: {fileID: 0}
+  audioSource: {fileID: 0}
+  reloadSound: {fileID: 8300000, guid: ca5de8a1d5f0ac54b9d3413ff0939af1, type: 3}
+  shootSound: {fileID: 8300000, guid: 029f621b1b3ab83408e029169ab13179, type: 3}
+  LowAmmoText: {fileID: 0}
+  isReloading: 0
